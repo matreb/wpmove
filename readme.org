@@ -10,6 +10,10 @@ The intended use is for moving vagrant installs of wordpress to servers without 
 * Motivation
 Having worked with a hosting provider of client choice that offered only a Debian install way after its EOL and that wouldn't open up mysql trough ssh to anybody, I wanted a simple and fast way to transfer a wordpress install from a local vagrant machine to it. This script is the result.
 
+** Also: #1273 – Unknown collation: ‘utf8mb4_unicode_520_ci’ 
+
+Yes, if you get this error while using plain wordmove, this script should fix it for you.
+
 * Prerequisites
 
 Wordmove should be installed in the vagrant machine. That's what does all the hard work.
