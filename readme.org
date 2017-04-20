@@ -8,7 +8,7 @@
 The intended use is for moving vagrant installs of wordpress to servers without permission to use mysql trough ssh - only with phpmyadmin or similar tools. The script does also patch the wordpress sql dump for use in older installs of mysql (version 5.1.xx in this case)
 
 * Motivation
-Having worked with a hosting provider of client choice that offered only a Debian install way after its EOL and that wouldn't open up mysql trough ssh to nobody, I wanted a simple and fast way to transfer a wordpress install from a local vagrant machine to it. This script is the result.
+Having worked with a hosting provider of client choice that offered only a Debian install way after its EOL and that wouldn't open up mysql trough ssh to anybody, I wanted a simple and fast way to transfer a wordpress install from a local vagrant machine to it. This script is the result.
 
 * Prerequisites
 
