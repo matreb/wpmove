@@ -17,7 +17,7 @@ Wordmove should be installed in the vagrant machine. That's what does all the ha
 * Code example
 
 - Clone the repository and modify the config file name (to match the wp install you are moving) and modify the config file with the data of the vagrant machine and wordpress installation.
-- If spaces are found in the paths, put the paths in "" brackets.
+- If spaces are found in the paths, put the paths in \"\" brackets.
 - Run the move from within the repository folder with:
 : $ ./wpmove config_filename
 - Import the generated sql dump file into your database in phpmyadmin.
