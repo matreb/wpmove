@@ -1,0 +1,7 @@
+DIRECTORYNAME=/path/to/vagrant/folder
+SQLDUMPNAME=dump_of_project_xyz.sql
+WPURL=http://project_xyz.com
+# ssh username@server_address (key must already be saved on the server)
+SSHLOGIN=project_xyz@111.222.11.22
+PATHTOWPINSTALL=/full/path/on/the/server/to/wp
+PHPMYADMINURL="https://111.222.11.22:8080/phpmyadmin/index.php?db=project_xyz&target=db_structure.php"

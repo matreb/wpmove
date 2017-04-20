@@ -1,0 +1,46 @@
+#+TITLE: WPMove Readme
+#+Options: num:nil
+#+STARTUP: odd
+#+Style: <style> h1,h2,h3 {font-family: arial, helvetica, sans-serif} </style>
+
+* Synopsis
+
+The intended use is for moving vagrant installs of wordpress to servers without permission to use mysql trough ssh - only with phpmyadmin or similar tools. The script does also patch the wordpress sql dump for use in older installs of mysql (version 5.1.xx in this case)
+
+* Motivation
+Having worked with a hosting provider of client choice that offered only a Debian install way after its EOL and that wouldn't open up mysql trough ssh to nobody, I wanted a simple and fast way to transfer a wordpress install from a local vagrant machine to it. This script is the result.
+
+* Prerequisites
+
+Wordmove should be installed in the vagrant machine. That's what does all the hard work.
+
+* Code example
+
+Clone the repository and modify the config file name (to match the wp install you are moving) and modify the config file with the data of the vagrant machine and wordpress installation. Run the move from within the repository folder with:
+: $ wpmove config_filename
+and import the generated sql dump file into your database in phpmyadmin.
+That's it, the wp install should be cloned to the server.
+
+* License
+
+MIT License
+
+Copyright (c) 2017 matreb
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
